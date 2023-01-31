@@ -1,0 +1,440 @@
+.body{
+   
+}
+
+
+.entete{
+    background-color: orange;
+   
+   
+   display: flex;
+   flex-direction: column ;
+
+    
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.entetessond{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+
+
+.logocontainer{
+    text-align: center;
+    /* permet dee faire 16px padding en haut eet bas. et le dauxieemmee zero cest pour le leeft and right */
+    padding: 16px 0;
+    
+
+}
+
+.cartcontainer{
+    text-align: right;
+   
+}
+
+
+
+.logoimg{
+    width: 60%;
+
+}
+
+.cartcontainer .btn i{
+    width: 60px; 
+   
+
+}
+  
+
+
+/* dropdown buttton settting */
+.dropbtnlog{
+    background-color: white;
+    border: none;
+    font-size: 16px;
+    padding-right: 15px;
+    padding-left: 15px;
+    
+
+}
+
+/************************************* login  *******************************/
+
+.logintop{
+    
+   
+    /* display: inline-block;
+    position: relative;
+    right: -310px;
+    margin-top: 5px; */
+    
+   
+    
+}
+/* Dropdown Content (Hidden by Default) */
+.logintop-content{
+    display: none;
+    position: absolute;
+    z-index: 3;
+    
+
+   
+}
+
+/* ici on fait le css des opption qu'on a nomer donc les a Links inside the dropdown */
+.logintop-content a{
+    color: black;
+    display: block;
+    background-color: white;
+    padding: 5px;
+   
+}
+/* Change color of text links on hover */
+.logintop-content a:hover{ color: orange;}
+
+/* Show the dropdown menu on hover */
+.logintop:hover .logintop-content{display:block;  padding-right: 15px;
+    padding-left: 15px;}
+
+
+
+
+.search{
+    font-size: 17px;
+    
+    
+    }
+/************************************* menu  *******************************/
+
+/*dropdwownmenu button styler*/
+.dropbtnmenu{
+    background-color: orange;
+    color: black;
+    font-size: 18px;
+    border: white solid ;
+    padding-right: 8px;
+    padding-left: 8px;
+    
+}
+
+/*  the contenaire <div> - needed to position th dropdown content  */
+.topnavigation{
+    position: relative;
+    display: inline-block;
+}
+
+/* faire lees dropdown content (hiden by deefault)  */
+.topnavigation-content{
+    display: none;
+    position: absolute;
+    background-color: orange;
+    z-index: 1000;
+    
+
+
+}
+
+/*  links inside the dropdown */
+.topnavigation-content a{
+    color:black ;
+    text-decoration: none;
+    display: block;
+  
+}
+
+/*  changee color of dropdown link on hover  */
+.topnavigation-content a:hover { background-color: white;}
+/* Show the dropdown menu on hover + on a agrandi lee padding*/
+.topnavigation:hover .topnavigation-content{ 
+    display:block; 
+    padding: 20px 40px;
+   
+}
+
+
+
+
+
+.toplist{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: orange;
+}
+
+.toplist li{
+    color: black;
+    display: block;
+}
+
+
+/************************************* les produits *******************************/
+
+/* arrangeeer les produit d'acceuil  */
+.produits{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 8px;
+
+}
+/*  ajuster la size dees produit */
+.produit{
+    padding: 24px;
+}
+
+.produit_image {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+/*  ajuster la size dees produit */
+.produit_image img{
+
+    width: 100%;
+    height: 100%;
+}
+.produit_actions{
+
+    /*  */
+    display: flex;
+     /* comment on veut que ca soit verticale */
+    flex-direction: row;
+    /*  justemeent conteneent nous dit horizontslement commeent on veeut que notree add to bart btn soit position */
+    justify-content: center;
+   
+}
+
+.produit_btn{
+    
+}
+
+.centercart{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.Cart-Container{
+    width: 70%;
+    height: 85%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 25px 40px #1687d933;
+   }
+
+   .Header{
+    margin: auto;
+    width: 90%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+   .Heading{
+    font-size: 20px;
+    font-family: ‘Open Sans’;
+    font-weight: 700;
+    color: #2F3841;
+   }
+   .Action{
+    font-size: 14px;
+    font-family: ‘Open Sans’;
+    font-weight: 600;
+    color: #E44C4C;
+    cursor: pointer;
+    border-bottom: 1px solid #E44C4C;
+   }
+
+
+
+.list{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+}
+
+
+.listfoot{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+   padding: 30px;
+   margin-bottom: 0%;
+   list-style-type: none;
+   text-align: center;
+   font-size: 16px;
+
+
+}
+
+
+
+.logincontainer{
+    display: flex;
+    flex-direction: column;
+    padding: 60px 16px;
+    border: solid black;
+    margin: 8px 8px;
+}
+.titleform{
+    font-size: 25px;
+    text-align: center;
+}
+
+.psw{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.logo{
+   
+}
+
+
+/************************************* la page admin *******************************/
+.conteneur_principal{
+   
+}
+.zoneMenu ul{
+
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    background-color: black;
+   
+}
+
+.zoneMenu a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+
+
+.zoneMenu h2{
+
+    text-align: center;
+    
+}
+
+.tableproduit{
+    
+}
+.tableproduit th{
+  width: 100%;  
+    
+}
+
+.tableproduit tr {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+    width: 90%;
+}
+
+.imageContainer {
+
+    width: 200px;
+    height: 200px;
+}
+
+.imageContainer img {
+
+    max-height: 100%;
+    max-width: 100%;
+  
+
+}
+
+.tablesprroduit tr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    padding-bottom: 5%;
+   
+   
+    
+   
+   
+}
+.tablesprroduit td{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    height: 30%;
+   margin: 2%;
+    
+    
+    
+   
+   
+}
+
+
+
+
+@media screen  and (min-width:450px) {
+    .toplist{
+        flex-direction: row;
+
+    }
+    
+    .toplist a {
+
+        color: red;
+    }
+
+    .zoneMenu ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+       
+       
+    }
+   
+    .produits{
+       
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+    
+    }
+
+    .produit_image {
+        width: 300px;
+        height: 300px;
+    }
+
+
+  }
+
+  @media screen  and (min-width: 992px) { 
+    body{
+     
+    }
+
+  }
+
